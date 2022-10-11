@@ -1,0 +1,29 @@
+.main-login {
+  width: 1140px;
+  height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../../../public/footprint-right.svg"),
+    url("../../../public/footprint-left.svg"),
+    url("../../../public/footprint-right.svg"),
+    url("../../../public/footprint-left.svg");
+  background-repeat: no-repeat;
+  background-position: right top 10%, left top 20%, right 60px top 90%,
+    left 60px top 90%, right top 80%;
+}
+.form-login {
+  width: 500px;
+  height: 350px;
+  background: #f1a661;
+  padding: 10px 20px;
+  border-radius: 10px;
+  .text-login {
+    text-align: center;
+    color: white;
+  }
+}
+.form-register {
+  height: 450px;
+}

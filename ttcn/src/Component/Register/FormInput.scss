@@ -1,0 +1,54 @@
+.form-login {
+  button {
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    border: none;
+  }
+  .errorMsg {
+    font-size: 14px;
+    color: red;
+    display: none;
+  }
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  input[type="password"] {
+    flex: 1;
+    flex-shrink: 0;
+  }
+
+  .eye-pass {
+    color: gray;
+    cursor: pointer;
+    z-index: 99;
+    right: 3px;
+    top: 15px;
+    font-size: 18px;
+    background: transparent;
+    align-items: center;
+    position: absolute;
+    user-select: none;
+  }
+  .input-password {
+    position: relative;
+  }
+  .input-custom {
+    height: 2.3rem;
+  }
+}
+input:invalid[focused="true"] ~ .errorMsg {
+  display: block;
+}
+.form-input {
+  label {
+    width: 100%;
+  }
+}

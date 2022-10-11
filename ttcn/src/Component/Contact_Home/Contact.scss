@@ -1,0 +1,133 @@
+.box-contact {
+  width: 100%;
+  height: 100%;
+  background-image: url("./bg-contact.svg");
+  background-color: #55bd8d;
+  background-size: cover;
+  margin-bottom: 30px;
+}
+.module-contact {
+  display: flex;
+  width: 100%;
+  .img-left {
+    width: 50%;
+  }
+  .form-contact {
+    width: 50%;
+    .title-contact {
+      margin-top: 40px;
+      margin-bottom: 40px;
+      font-size: 30px;
+      color: white;
+      max-width: 320px;
+    }
+    .form {
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom: 40px;
+      textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      .group {
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        background: white;
+        border-radius: 10px;
+        height: 40px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        span {
+          color: #fc9214;
+          padding: 0 10px;
+        }
+        input {
+          outline: none;
+          border: none;
+        }
+
+        select {
+          width: 100%;
+          outline: none;
+          border: none;
+        }
+      }
+      a {
+        margin-top: 20px;
+        width: calc(50% - 15px);
+        background-color: #fc9214;
+        height: 42px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+      }
+    }
+  }
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  -webkit-appearance: none;
+}
+.text-header {
+  text-align: center;
+  color: #fc9214;
+}
+.bg-cmt-customer {
+  background-image: url("../../../public/footprint-left.svg"),
+    url("../../../public/footprint-right.svg"),
+    url("../../../public/footprint-left.svg"),
+    url("../../../public/footprint-right.svg");
+  background-repeat: no-repeat;
+  background-position: top left 60px, top right 60px, bottom left 10px,
+    bottom right 10px;
+}
+.cmt-customer {
+  width: 1170px;
+  display: flex;
+  justify-content: center;
+
+  figure {
+    border: 1px dashed #fc9214;
+    width: calc((1170 / 2)-40px);
+    height: 300px;
+    margin: 20px 40px;
+    padding: 20px;
+    background-image: url("../../../public/bg-talk-back.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    blockquote {
+      display: flex;
+      align-items: center;
+      .avatar {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+      }
+    }
+    .quote {
+      background-image: url("../../../public/quote.svg");
+      background-repeat: no-repeat;
+      background-position: top left 10px;
+      margin-top: 10px;
+      font-size: 1.1rem;
+      padding-left: 85px;
+    }
+  }
+}
